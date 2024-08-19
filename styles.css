@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.imagem {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #e61111;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a11010e3;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#resultado.success {
+    color: green;
+    border: 2px solid green;
+    background-color: #e8f5e9;
+}
+
+#resultado.error {
+    color: red;
+    border: 2px solid red;
+    background-color: #ffebee;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.registro {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+@media (max-width: 490px){
+    img{
+        width: 50%;
+        height: 50%;
+    }
+}
