@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Ampolas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="imagens/Logo-Dafo-dobro-tamanho.png" alt="Imagem do Equipamento" class="imagem">
+        <h1>Pesagem das Ampolas do sistema SCI</h1>
+    </header>
+    <div class="container">
+        <form id="form">
+            <label for="equipamento">Selecione o Equipamento:</label>
+            <select id="equipamento" name="equipamento">
+                <option value="1">Equipamento 1</option>
+                <option value="2">Equipamento 2</option>
+                <option value="3">Equipamento 3</option>
+            </select>
+            
+            <label for="ampola">Selecione a Ampola:</label>
+            <select id="ampola" name="ampola">
+                <option value="1">Ampola 1</option>
+                <option value="2">Ampola 2</option>
+                <option value="3">Ampola 3</option>
+                <option value="4">Ampola 4</option>
+            </select>
+            
+            <label for="nome">Nome do Cadastrador:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+            
+            <label for="peso">Peso Atual da Ampola (g):</label>
+            <input type="number" id="peso" name="peso" step="0.01" required>
+            
+            <button type="button" onclick="registrar()">Registrar</button>
+        </form>
+        
+        <div id="resultado"></div>
+        
+        <button onclick="window.location.href='consulta.html';">Consultar Registros</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
